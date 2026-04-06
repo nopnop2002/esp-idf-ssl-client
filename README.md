@@ -30,9 +30,9 @@ openssl req -x509 -new -nodes -key server.key -subj "/CN=${IP}" -days 10000 -out
 
 
 # Configuration   
+![Image](https://github.com/user-attachments/assets/9fa2ecf4-d36e-4b74-9c81-038cb5c8da5a)
+![Image](https://github.com/user-attachments/assets/23fb100a-7ab4-4790-bb25-0f7a5d6f19d5)
 
-![config-main](https://user-images.githubusercontent.com/6020549/120054821-3d755500-c06d-11eb-950c-d357d0a9fdef.jpg)
-![config-app](https://user-images.githubusercontent.com/6020549/166416531-7fa74d94-86fc-4cac-a568-74de07d7a051.jpg)
 
 # Start ssl server
 ```
