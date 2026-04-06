@@ -35,12 +35,20 @@ openssl req -x509 -new -nodes -key server.key -subj "/CN=${IP}" -days 10000 -out
 ![Image](https://github.com/user-attachments/assets/23fb100a-7ab4-4790-bb25-0f7a5d6f19d5)
 
 
-# Start ssl server
-```
-cd esp-idf-ssl-client/
-cd clang-tls-communication
-make
-./server
-```
+# Start the SSL server
+- C language
+	```
+	cd esp-idf-ssl-client/
+	cd clang-tls-communication
+	make
+	./server
+	```
+	![Image](https://github.com/user-attachments/assets/e030e803-c799-4e28-91b6-c2ab1ed66a47)
 
-![Image](https://github.com/user-attachments/assets/e030e803-c799-4e28-91b6-c2ab1ed66a47)
+- python script
+	```
+	cd esp-idf-ssl-client/
+	cd python-tls-communication
+	python3 server.py
+	```
+	![Image](https://github.com/user-attachments/assets/a9a0bfec-fc3f-48c8-9fd3-f27596dfa961)

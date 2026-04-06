@@ -14,5 +14,7 @@ echo "Create server.crt with ${IP}"
 openssl req -x509 -new -nodes -key server.key -subj "/CN=${IP}" -days 10000 -out server.crt
 cp server.key clang-tls-communication/
 cp server.crt clang-tls-communication/
+cp server.key python-tls-communication/
+cp server.crt python-tls-communication/
 cp server.crt main/
 

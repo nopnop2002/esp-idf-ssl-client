@@ -58,7 +58,7 @@ int main()
 		}
 		printf("Handshaked\n");
 
-		unsigned char buf[8192];
+		unsigned char buf[1024];
 		size_t nread;
 		size_t nwritten;
 		size_t total = 0;
@@ -68,7 +68,8 @@ int main()
 		}
 		printf("nread=%ld\n", nread);
 		printf("buf=[%.*s]\n", (int)nread, buf);
-		if (SSL_write_ex(ssl, buf, nread, &nwritten) <= 0) {
+		strcpy(buf, "Hello, secure world!\n");
+		if (SSL_write_ex(ssl, buf, strlen(buf), &nwritten) <= 0) {
 			printf("SSL_write_ex operation was not successful\n");
 		}
 
