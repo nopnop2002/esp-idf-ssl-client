@@ -1,0 +1,33 @@
+menu "Application Configuration"
+
+	config ESP_WIFI_SSID
+		string "WiFi SSID"
+		default "myssid"
+		help
+			SSID (network name) to connect to.
+
+	config ESP_WIFI_PASSWORD
+		string "WiFi Password"
+		default "mypassword"
+		help
+			WiFi password (WPA or WPA2) to use.
+
+	config ESP_MAXIMUM_RETRY
+		int "Maximum retry"
+		default 5
+		help
+			Set the Maximum retry to avoid station reconnecting to the AP unlimited when the AP is really inexistent.
+
+	config SERVER_HOST
+		string "SSL Server host"
+		default "192.168.0.100"
+		help
+			IP address for SSL Server.
+
+	config SERVER_PORT
+		int "SSL Server port"
+		default 8000
+		help
+			Port number for SSL Server.
+
+endmenu
