@@ -42,3 +42,4 @@ make
 ./server
 ```
 
+![Image](https://github.com/user-attachments/assets/e030e803-c799-4e28-91b6-c2ab1ed66a47)
