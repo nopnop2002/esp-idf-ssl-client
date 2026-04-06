@@ -10,7 +10,7 @@ You can use mbedtls_ssl_write/mbedtls_ssl_read instead of read/write.
 ESP-IDF V5.0 or later.   
 ESP-IDF V4.4 release branch reached EOL in July 2024.   
 
-# mbedtls version
+__Notes on mbedtls version__   
 ESP-IDF V5.x includes mbedtls Version 3.x.x.   
 ESP-IDF V6.x includes mbedtls Version 4.x.x.   
 In mbedtls V3, applications using TLS needed to provide a random generator, generally by instantiating an entropy context (mbedtls_entropy_context) and a DRBG context (mbedtls_ctr_drbg_context or mbedtls_hmac_drbg_context).    
