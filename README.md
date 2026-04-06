@@ -4,6 +4,7 @@ Simple ssl client for esp-idf.
 ESP-IDF includes [this](https://github.com/Mbed-TLS/mbedtls) mbedtsl library.   
 You can use this components as standard.   
 ESP-IDF includes many example codes, but there wasn't a simple SSL communication example, so I created one.   
+You can use mbedtls_ssl_write/mbedtls_ssl_read instead of read/write.   
 
 # Software requirements
 ESP-IDF V5.0 or later.   
